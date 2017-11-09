@@ -10,7 +10,7 @@
             "name": "Pandora",
             "email": "pandoraangora@gmail.com"
         }
-    ]
+    ],
     "autoload": {
         "psr-4": {
             "Kirby4link\\": "src/"

@@ -1,6 +1,7 @@
 <?php
 
 namespace Kirby4link\Controllers;
+
 /**
  * Class DefaultController
  * @package Kirby4link\Controllers

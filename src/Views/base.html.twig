@@ -1,25 +1,35 @@
+{% import 'form_macro.html.twig' as form %}
+
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="global">
-    {% block css %}
-    {% endblock %}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
     <title>Wilders Paris</title>
 </head>
 <body>
-    <h1>hey</h1>
-    {% block nav %}
-    {% endblock %}
+<h1 class="text-center">Welcome Wilders!</h1>
+<h2 class="text-center">#Paris</h2>
+<img src="https://media.giphy.com/media/l4JyOCNEfXvVYEqB2/giphy.gif" class="center-block">
+<div class="container">
+    <div class="col-xs-6">
+        <form action="" method="post">
+            {{ form.input('name', 'Votre nom') }}
+            {{ form.input('firstname', 'Votre prénom') }}
+            {{ form.input('pseudo', 'Votre pseudo sur Rocket Chat') }}
+            {{ form.input('date', 'Votre date de naissance') }}
+            {{ form.input('adresse', 'Votre adresse') }}
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary">Envoyer</button>
+            </div>
+        </form>
+    </div>
+</div>
 
-    {% block body %}
-    {% endblock %}
-
-    {% block footer %}
-    {% endblock %}
 
 </body>
 </html>

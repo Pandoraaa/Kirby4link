@@ -1,0 +1,14 @@
+{
+    "name": "pandora/kirby4link",
+    "type": "project",
+    "require": {
+        "twig/twig": "^2.4",
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "authors": [
+        {
+            "name": "Pandora",
+            "email": "pandoraangora@gmail.com"
+        }
+    ]
+}

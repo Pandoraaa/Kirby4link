@@ -1,5 +1,8 @@
 <?php
 
+require_once '../../vendor/autoload.php';
+
+
 define("DSN", "mysql:host=localhost;dbname=link");
 define("USER", "root");
 define("PASS", "9f8a7fc4b89ec2ecc8ab458a7f30f0c00471be5b8555eeb9");

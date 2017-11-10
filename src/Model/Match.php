@@ -11,7 +11,7 @@ class Match extends Manager
 
         $req=$this->db->query("SELECT pseudo FROM user WHERE MONTH(date) = MONTH(NOW()) AND DAY(date) = DAY(NOW())");
         $result=$req->fetchAll() ;
-        var_dump($result);die();
+
         if (!empty($req)){
 
             $client = new \GuzzleHttp\Client();

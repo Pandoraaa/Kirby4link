@@ -44,7 +44,7 @@ class DefaultController extends Controller
             }
 
         }
-        return $this->twig->render('form.html.twig');
+        return $this->twig->render('base.html.twig');
 
     }
 }

@@ -28,7 +28,7 @@ class DefaultController extends Controller
                 }
             }
 
-            if ($errors != 0){
+            if (!empty($errors)){
                 return $this->twig->render('form.html.twig', array(
                     'errors' => $errors
                 ));
@@ -44,7 +44,7 @@ class DefaultController extends Controller
             }
 
         }
-        //return $this->twig->render('form.html.twig');
+        return $this->twig->render('form.html.twig');
 
     }
 }

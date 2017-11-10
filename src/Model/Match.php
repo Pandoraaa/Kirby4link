@@ -8,9 +8,10 @@ require '../../vendor/autoload.php';
 class Match extends Manager
 {
     public function matchDate(){
-        $now = date('m-d');
-        $req=$this->db->query("SELECT pseudo FROM user WHERE date=$now");
-        $req ;
+
+        $req=$this->db->query("SELECT pseudo FROM user WHERE MONTH(date) = MONTH(NOW()) AND DAY(date) = DAY(NOW())");
+        $result=$req->fetchAll() ;
+        var_dump($result);die();
         if (!empty($req)){
 
             $client = new \GuzzleHttp\Client();

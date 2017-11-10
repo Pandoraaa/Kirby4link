@@ -1,0 +1,29 @@
+{% import 'form_macro.html.twig' as form %}
+{% extends'base.html.twig' %}
+
+{% block inscription %}
+{% endblock inscription %}
+
+{% block form %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <form action="index.php?section=add" method="post">
+                {{ form.input('nom', 'Votre nom') }}
+                {% if errors.nom is defined %}{{ errors.nom }}{% endif %}
+                {{ form.input('prenom', 'Votre prénom') }}
+                {% if errors.prenom is defined %}{{ errors.prenom }}{% endif %}
+                {{ form.input('pseudo', 'Votre pseudo sur Rocket Chat') }}
+                {% if errors.pseudo is defined %}{{ errors.pseudo }}{% endif %}
+                {{ form.input('date', 'Votre date de naissance') }}
+                {% if errors.date is defined %}{{ errors.date }}{% endif %}
+                {{ form.input('adresse', 'Votre adresse') }}
+                {% if errors.adresse is defined %}{{ errors.adresse }}{% endif %}
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary">Envoyer</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock form %}

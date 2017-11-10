@@ -1,0 +1,6 @@
+{% macro input(name, label) %}
+    <div class="form-group">
+        <label for="{{ name }}">{{ label }}</label>
+        <input type="{{ name == 'date' ? 'date' : 'text'}}" class="form-control" id="{{ name }}" name="{{ name }}">
+    </div>
+{% endmacro %}

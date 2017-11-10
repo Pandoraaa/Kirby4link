@@ -1,25 +1,35 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="global">
-    {% block css %}
-    {% endblock %}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../src/assets/css/style.css">
     <title>Wilders Paris</title>
 </head>
 <body>
 
-    {% block nav %}
-    {% endblock %}
+    <header>
+        <h1 class="text-center">Welcome Wilders!</h1>
+        <h2 class="text-center">#Paris</h2>
+        <img src="https://media.giphy.com/media/l4JyOCNEfXvVYEqB2/giphy.gif" class="center-block">
+    </header>
+{% block inscription %}
+<div class="text-center">
+    <h2>Hey inscris-toi </h2>
+    <a href="index.php?section=add" class="btn btn-primary" role="button">S'inscrire</a>
+</div>
+{% endblock inscription %}
 
-    {% block body %}
-    {% endblock %}
+{% block form %}
+{% endblock form %}
 
-    {% block footer %}
-    {% endblock %}
+<footer class="text-center">
+    Made with ♥ by Kirby & Link </br>
+    Special guests: Florian & Jack
+</footer>
 
 </body>
 </html>

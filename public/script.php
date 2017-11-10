@@ -19,7 +19,7 @@ $send = $client->request('POST', 'https://chat.wildcodeschool.fr/api/v1/chat.pos
         "X-User-Id"=> $auth->data->userId
     ],
     "form_params" => [
-        "channel" => "#kirby",
+        "channel" => "#Paris",
         "alias" => "Party Bot",
         "emoji" => ":beers:",
         "text" => "@all Heyyyyy c'est l'anniversaire de @Caroline! 

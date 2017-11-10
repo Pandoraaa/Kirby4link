@@ -35,7 +35,7 @@ if (!empty($req)){
                 "channel" => "#paris",
                 "alias" => "Party Bot",
                 "emoji" => ":beers:",
-                "text" => "Heyyyyy c'est l'anniversaire de " . $result->pseudo . " 
+                "text" => "@all Heyyyyy c'est l'anniversaire de " . $result->pseudo . " 
 Qui est chaud pour boire au Bistrot des Artistes à 18h30 ce soir? Réagissez avec une choppe :beer:
 https://media.giphy.com/media/3o7btZjaYxqkGyOYA8/giphy.gif "
             ]

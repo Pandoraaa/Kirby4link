@@ -1,5 +1,3 @@
-{% import 'form_macro.html.twig' as form %}
-
 <!doctype html>
 <html lang="fr">
 <head>
@@ -8,28 +6,30 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="../src/assets/css/style.css">
     <title>Wilders Paris</title>
 </head>
 <body>
-<h1 class="text-center">Welcome Wilders!</h1>
-<h2 class="text-center">#Paris</h2>
-<img src="https://media.giphy.com/media/l4JyOCNEfXvVYEqB2/giphy.gif" class="center-block">
-<div class="container">
-    <div class="col-xs-6">
-        <form action="" method="post">
-            {{ form.input('name', 'Votre nom') }}
-            {{ form.input('firstname', 'Votre prénom') }}
-            {{ form.input('pseudo', 'Votre pseudo sur Rocket Chat') }}
-            {{ form.input('date', 'Votre date de naissance') }}
-            {{ form.input('adresse', 'Votre adresse') }}
-            <div class="form-group">
-                <button type="submit" class="btn btn-primary">Envoyer</button>
-            </div>
-        </form>
-    </div>
-</div>
 
+    <header>
+        <h1 class="text-center">Welcome Wilders!</h1>
+        <h2 class="text-center">#Paris</h2>
+        <img src="https://media.giphy.com/media/l4JyOCNEfXvVYEqB2/giphy.gif" class="center-block">
+    </header>
+{% block inscription %}
+<div class="text-center">
+    <h2>Hey inscris-toi </h2>
+    <a href="index.php?section=add" class="btn btn-primary" role="button">S'inscrire</a>
+</div>
+{% endblock inscription %}
+
+{% block form %}
+{% endblock form %}
+
+<footer class="text-center">
+    Made with ♥ by Kirby & Link </br>
+    Special guests: Florian & Jack
+</footer>
 
 </body>
 </html>
